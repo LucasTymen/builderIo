@@ -1,0 +1,90 @@
+Étape 1: Prérequis au Projet
+
+Avant de commencer, assurez-vous d'avoir Node.js et npm (Node Package Manager) installés sur votre machine. Vous pouvez les installer à partir du site officiel de Node.js.
+Étape 2: Structure du Projet
+
+Organisez votre projet avec les dossiers suivants :
+
+css
+
+project-root
+│
+├── frontend
+│   ├── pages
+│   │   ├── signIn.js
+│   │   ├── login.js
+│   │   ├── articles.js
+│   ├── components
+│   │   ├── Header.js
+│   │   ├── ArticleCard.js
+│   ├── styles
+│       ├── main.css
+│
+├── backend
+│   ├── routes
+│   │   ├── authRoutes.js
+│   │   ├── articleRoutes.js
+│   ├── controllers
+│   │   ├── authController.js
+│   │   ├── articleController.js
+│   ├── services
+│   │   ├── authService.js
+│   │   ├── articleService.js
+│   ├── models
+│   │   ├── User.js
+│   │   ├── Article.js
+│   ├── config
+│       ├── config.js
+│
+├── README.md
+├── .env (pour stocker les variables d'environnement)
+
+Étape 3: Installer le Projet
+
+    Clonez le repo Git.
+    Installez les dépendances du frontend et du backend en utilisant npm install dans les dossiers respectifs.
+    Créez un fichier .env dans le dossier backend pour stocker les variables d'environnement.
+
+Étape 4: Configuration du Backend
+
+    Configurez le serveur Express dans backend/index.js.
+    Mettez en place les routes d'authentification (authRoutes.js) et de récupération des articles (articleRoutes.js).
+    Implémentez les contrôleurs correspondants (authController.js et articleController.js).
+    Créez les services nécessaires (authService.js et articleService.js).
+    Définissez les modèles MongoDB (User.js et Article.js).
+
+Étape 5: Configuration du Frontend
+
+    Utilisez Next.js pour créer les pages (signIn.js, login.js, articles.js).
+    Créez des composants réutilisables dans le dossier components.
+    Définissez les styles dans le dossier styles.
+
+Étape 6: Connexion au CMS Builder.io
+
+    Utilisez une requête API pour récupérer les articles depuis Builder.io dans articleService.js.
+    Affichez les articles sur la page Articles en utilisant des composants réactifs.
+
+Étape 7: Authentification et Redirection
+
+    Implémentez l'authentification avec le système de création de compte et de connexion.
+    Utilisez des bibliothèques telles que bcrypt pour le hachage des mots de passe.
+    Configurez les routes pour rediriger l'utilisateur après le sign-in et le login.
+
+Étape 8: Fichier README
+
+Rédigez un fichier README détaillé qui inclut :
+
+    Prérequis au projet.
+    Structure du projet.
+    Instructions pour installer le projet.
+    Explications et justifications des choix faits (bibliothèques, architecture, etc.).
+    Commentaires supplémentaires (si nécessaire).
+
+Étape 9: Tests et Commentaires (Optionnel)
+
+Si le temps le permet, ajoutez des tests unitaires pour les différentes parties du backend et frontend. Ajoutez également des commentaires dans votre code expliquant des choix particuliers ou des difficultés rencontrées.
+Étape 10: Soumission
+
+Une fois que vous avez terminé le projet, assurez-vous de soumettre le repo Git, y compris le frontend, le backend et le fichier README. Vous pouvez également envoyer le fichier .env par email si nécessaire.
+
+N'oubliez pas de documenter vos décisions et de garder votre code propre et bien organisé.
