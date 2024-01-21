@@ -10,30 +10,30 @@ css
 project-root
 │
 ├── frontend
-│   ├── pages
+│   ├── pages (contenant les pages Next.js)
 │   │   ├── signIn.js
 │   │   ├── login.js
 │   │   ├── articles.js
-│   ├── components
+│   ├── components (composants réutilisables)
 │   │   ├── Header.js
 │   │   ├── ArticleCard.js
-│   ├── styles
+│   ├── styles (styles spécifiques au frontend)
 │       ├── main.css
 │
 ├── backend
-│   ├── routes
+│   ├── routes (définition des routes de l'application)
 │   │   ├── authRoutes.js
 │   │   ├── articleRoutes.js
-│   ├── controllers
+│   ├── controllers  (logique métier)
 │   │   ├── authController.js
 │   │   ├── articleController.js
-│   ├── services
+│   ├── services  (interaction avec le CMS Builder.io)
 │   │   ├── authService.js
 │   │   ├── articleService.js
-│   ├── models
+│   ├── models (modèles de données MongoDB)
 │   │   ├── User.js
 │   │   ├── Article.js
-│   ├── config
+│   ├── config  (configurations, y compris la configuration de MongoDB)
 │       ├── config.js
 │
 ├── README.md
@@ -52,6 +52,7 @@ project-root
     Implémentez les contrôleurs correspondants (authController.js et articleController.js).
     Créez les services nécessaires (authService.js et articleService.js).
     Définissez les modèles MongoDB (User.js et Article.js).
+    Ajoutez des commentaires explicatifs dans chaque fichier pour guider le développeur.
 
 Étape 5: Configuration du Frontend
 
@@ -63,6 +64,7 @@ project-root
 
     Utilisez une requête API pour récupérer les articles depuis Builder.io dans articleService.js.
     Affichez les articles sur la page Articles en utilisant des composants réactifs.
+    Assurez-vous d'avoir installé les dépendances frontend nécessaires via npm install.
 
 Étape 7: Authentification et Redirection
 
