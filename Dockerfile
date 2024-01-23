@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:lts
+FROM node:14
 
 # Set the working directory to /app
 WORKDIR /app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000 3000
 
 # Command to run both backend and frontend
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]
