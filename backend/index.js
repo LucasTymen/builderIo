@@ -1,14 +1,12 @@
-
 const express = require('express');
 const app = express();
-const authRoutes = require('./routes/authRoutes');
-const articleRoutes = require('./routes/articleRoutes');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const authRoutes = require('./routes/authRoutes');
+const articleRoutes = require('./routes/articleRoutes');
 const port = process.env.PORT || 3000;
 
 dotenv.config();
-
 
 // Middleware
 app.use(express.json());
@@ -19,7 +17,6 @@ mongoose.connect(process.env.MONGODB_URI, {
   useUnifiedTopology: true,
   useCreateIndex: true,
 });
-
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
@@ -27,8 +24,6 @@ db.once('open', () => {
 });
 
 // Routes
-const authRoutes = require('./routes/authRoutes');
-const articleRoutes = require('./routes/articleRoutes');
 app.use('/auth', authRoutes);
 app.use('/articles', articleRoutes);
 
