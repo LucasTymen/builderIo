@@ -1,20 +1,17 @@
-# Use an official Node.js runtime as a parent image
+# Use the official Node.js image as the base image
 FROM node:14
 
-# Set the working directory to /app
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
+# Copy the package.json and package-lock.json files
 COPY package*.json ./
 
-# Install dependencies for both backend and frontend
+# Install dependencies
 RUN npm install
 
-# Copy the content of the current directory to the working directory
+# Copy the rest of the application code
 COPY . .
 
-# Expose ports for both backend and frontend
-EXPOSE 5000 3000
-
-# Command to run both backend and frontend
+# Specify the command to run on container startup
 CMD ["npm", "start"]

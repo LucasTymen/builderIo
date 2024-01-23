@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGODB_URI, {
   useUnifiedTopology: true,
   useCreateIndex: true,
 });
+
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
@@ -30,4 +31,9 @@ app.use('/articles', articleRoutes);
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+});
+
+// Endpoint de test
+app.get('/test', (req, res) => {
+  res.status(200).json({ message: 'Backend is running successfully!' });
 });
