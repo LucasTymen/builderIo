@@ -1,3 +1,4 @@
+// server.js
 const express = require('express');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
@@ -13,6 +14,10 @@ connectDB();
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Welcome to the backend API!');
+});
+
 app.use('/api', userRoutes);
 
 // Start server
