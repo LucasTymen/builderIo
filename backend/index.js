@@ -1,14 +1,12 @@
-
 const express = require('express');
 const app = express();
-const authRoutes = require('./routes/authRoutes');
-const articleRoutes = require('./routes/articleRoutes');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const authRoutes = require('./routes/authRoutes');
+const articleRoutes = require('./routes/articleRoutes');
 const port = process.env.PORT || 3000;
 
 dotenv.config();
-
 
 // Middleware
 app.use(express.json());
@@ -27,12 +25,15 @@ db.once('open', () => {
 });
 
 // Routes
-const authRoutes = require('./routes/authRoutes');
-const articleRoutes = require('./routes/articleRoutes');
 app.use('/auth', authRoutes);
 app.use('/articles', articleRoutes);
 
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+});
+
+// Endpoint de test
+app.get('/test', (req, res) => {
+  res.status(200).json({ message: 'Backend is running successfully!' });
 });
