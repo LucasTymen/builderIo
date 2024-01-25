@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nx exec -- npm run _test -- ",
+    "_test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,17 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.0",
     "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nx": "17.2.8"
+  },
+  "nx": {
+    "targets": {
+      "test": {
+        "outputs": [
+          "{projectRoot}/n"
+        ]
+      }
+    }
   }
 }

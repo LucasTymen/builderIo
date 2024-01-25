@@ -1,0 +1,11 @@
+{
+  "targetDefaults": {
+    "test": {
+      "cache": true
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "nxCloudAccessToken": "YWE4MGNjMTItOGQ5My00OGE2LTgwZjktNDAxMmY0NjIwMzc1fHJlYWQtd3JpdGU="
+}

@@ -1,0 +1,133 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.0",
+    "winston": "^3.11.0",
+    "nx": "17.2.8"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "13820313644005740127"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "10513114176775472780"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "10994335105560962873"
+      }
+    ],
+    "projectFileMap": {
+      "backend": [
+        {
+          "file": ".env",
+          "hash": "1433201065467073840"
+        },
+        {
+          "file": "Dockerfile",
+          "hash": "15100140054484401159"
+        },
+        {
+          "file": "config/config.js",
+          "hash": "6917651336929714007"
+        },
+        {
+          "file": "config/db.js",
+          "hash": "3404033927039086958"
+        },
+        {
+          "file": "controllers/articleController.js",
+          "hash": "9444427212809337528"
+        },
+        {
+          "file": "controllers/authController.js",
+          "hash": "15914979453593910134"
+        },
+        {
+          "file": "controllers/userController.js",
+          "hash": "3255948883420860968"
+        },
+        {
+          "file": "data/sampleArticles.js",
+          "hash": "7089591914777153361"
+        },
+        {
+          "file": "docker-compose.yml",
+          "hash": "15575078316071569803"
+        },
+        {
+          "file": "index.js",
+          "hash": "16617549654815776691"
+        },
+        {
+          "file": "logger.js",
+          "hash": "3970501485270710862"
+        },
+        {
+          "file": "models/Article.js",
+          "hash": "4640072913597809862"
+        },
+        {
+          "file": "models/User.js",
+          "hash": "9636588526825525513"
+        },
+        {
+          "file": "nx.json",
+          "hash": "18197709042310446201"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "10150606642309591772"
+        },
+        {
+          "file": "package.json",
+          "hash": "12666425022581417710",
+          "deps": [
+            "npm:bcrypt",
+            "npm:body-parser",
+            "npm:dotenv",
+            "npm:express",
+            "npm:jsonwebtoken",
+            "npm:mongoose",
+            "npm:winston"
+          ]
+        },
+        {
+          "file": "routes/articleRoutes.js",
+          "hash": "5471418993720519983"
+        },
+        {
+          "file": "routes/authRoutes.js",
+          "hash": "16258313819543064095"
+        },
+        {
+          "file": "routes/userRoutes.js",
+          "hash": "15770892088784131938"
+        },
+        {
+          "file": "server.js",
+          "hash": "949394519150122854"
+        },
+        {
+          "file": "services/articleService.js",
+          "hash": "7198352163271708345"
+        },
+        {
+          "file": "services/authService.js",
+          "hash": "12874357533976658719"
+        }
+      ]
+    }
+  }
+}
