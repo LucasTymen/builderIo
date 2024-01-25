@@ -16,16 +16,16 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".nx/cache/d/daemon.log",
-        "hash": "13820313644005740127"
-      },
-      {
         "file": ".nx/cache/file-map.json",
-        "hash": "10513114176775472780"
+        "hash": "5970051081271681564"
       },
       {
         "file": ".nx/cache/project-graph.json",
         "hash": "10994335105560962873"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "716644418592071742"
       }
     ],
     "projectFileMap": {
