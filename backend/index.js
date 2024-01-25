@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
 const articleRoutes = require('./routes/articleRoutes');
 const port = process.env.PORT || 3000;
+const logger = require('./logger');
 
 dotenv.config();
 
@@ -37,3 +38,23 @@ app.listen(port, () => {
 app.get('/test', (req, res) => {
   res.status(200).json({ message: 'Backend is running successfully!' });
 });
+
+
+// logger ===================================
+app.get('/', (req, res) => {
+  logger.info('Request received on the homepage.');
+  res.send('Welcome to My Project!');
+});
+
+// Handle errors
+app.use((err, req, res, next) => {
+  logger.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  logger.info(`Server is running on port ${PORT}`);
+});
+
+// end of logger ===================================
