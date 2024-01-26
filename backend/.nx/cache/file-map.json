@@ -9,6 +9,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.0",
     "winston": "^3.11.0",
+    "cors": "^2.8.5",
     "nx": "17.2.8"
   },
   "pathMappings": {},
@@ -16,16 +17,48 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "models/User.js",
+        "hash": "16908636681884967809"
+      },
+      {
+        "file": "index.js",
+        "hash": "14648900551978343967"
+      },
+      {
+        "file": "controllers/authController.js",
+        "hash": "13857717465715092594"
+      },
+      {
+        "file": "models/authModel.js",
+        "hash": "2159842853305168183"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "11723344301135168802"
+      },
+      {
+        "file": "routes/userRoutes.js",
+        "hash": "5004698666543744446"
+      },
+      {
+        "file": "controllers/userController.js",
+        "hash": "2315422033670679213"
+      },
+      {
         "file": ".nx/cache/project-graph.json",
         "hash": "10994335105560962873"
       },
       {
-        "file": ".nx/cache/file-map.json",
-        "hash": "8197615100725340306"
+        "file": "package.json",
+        "hash": "66313692584012632"
       },
       {
-        "file": ".nx/cache/d/daemon.log",
-        "hash": "5760234051284642823"
+        "file": ".nx/cache/file-map.json",
+        "hash": "14748629295677214646"
+      },
+      {
+        "file": "routes/authRoutes.js",
+        "hash": "3081224982278767220"
       }
     ],
     "projectFileMap": {

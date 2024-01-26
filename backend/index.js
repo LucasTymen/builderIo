@@ -6,6 +6,12 @@ const authRoutes = require('./routes/authRoutes');
 const articleRoutes = require('./routes/articleRoutes');
 const port = process.env.PORT || 3000;
 const logger = require('./logger');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use('/api', articleRoutes);
 
 dotenv.config();
 

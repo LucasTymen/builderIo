@@ -4,13 +4,22 @@ const router = express.Router();
 const authController = require('../controllers/authController');
 
 // Route for user registration
-router.post('/register', authController.register);
+router.post('/register', async (req, res) => {
+  try {
+    const newUser = new AuthModel(req.body);
+    await newUser.save();
+    res.status(201).json({ message: 'User registered successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
 
 // Route for user login
 router.post('/login', authController.login);
 
 module.exports = router;
-
+export default router;
 
 // authController.js
 
