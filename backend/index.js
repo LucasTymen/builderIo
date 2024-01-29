@@ -7,6 +7,13 @@ const articleRoutes = require('./routes/articleRoutes');
 const port = process.env.PORT || 3000;
 const logger = require('./logger');
 
+require('winston').loggers.add(new winston.transports.Console({
+  colorize: true,
+  prettyPrint: true,
+  level: 'silly' // Change this to the desired log level (e.g., info, warn, error)
+}));
+const logger = require('winston').loggers.get('app');
+
 dotenv.config();
 
 // Middleware
