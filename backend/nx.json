@@ -7,21 +7,11 @@
   "affected": {
     "defaultBase": "master"
   },
-
-  "targetDefaults": {
-    "test": {
-      "cache": false
-    },
-    "build": {
-      "cache": false
-    }
+  "build": {
+    "cache": false
   },
   "devServer": {
-    "cache": false,
+    "cache": false
   },
-
-
-  "nxCloudAccessToken": "YWE4MGNjMTItOGQ5My00OGE2LTgwZjktNDAxMmY0NjIwMzc1fHJlYWQtd3JpdGU=",
-
-
+  "nxCloudAccessToken": "YWE4MGNjMTItOGQ5My00OGE2LTgwZjktNDAxMmY0NjIwMzc1fHJlYWQtd3JpdGU="
 }
